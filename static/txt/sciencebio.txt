@@ -1,0 +1,17 @@
+Science and Technology are Important to me.
+
+I am currently working on a research project at Georgia Tech, where I use
+MATLAB, Bash, and PBS scripts to help analyze brain data collected from mice.
+I work with the Precision Biosystems Laboratory, specifically under Ilya Kolb,
+an ME PhD student, and Dr. Singer, an Assistant Professor of Neuroscience in the
+BME department.
+
+I'm very lucky to be working in an environment with such kind,
+hardworking, and intellectual individuals, and the experience
+has been both humbling and rewarding. I've been able to meet experts in the
+field and learn new skills in programming and data analysis every day.
+
+I hope to take the technical skills I have developed in statistics and
+programming and apply them to other cutting edge areas in STEM. I am
+eager to jump on any new and interesting ideas, and motivated enough to make
+them become the future's realities.

@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <!-- ICON -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Mass Shootings in America</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/font-awesome.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- TIMELINE CSS STUFF -->
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+    <!-- <link href="static/css/style.css" rel="stylesheet"> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+
+  </head>
+
+
+  <body>
+    <!-- MAIN PAGE -->
+  <div id="page">
+
+    <div id="backtotop"><p>back to top</p></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="wrapper">
+        <!-- HEADER LEFT -->
+
+        <!-- HEADER RIGHT-->
+        <nav class="site-nav">
+	  <a href="/">home</a>
+          <a href="about.html">about me</a>
+          <a href="resume.html">resume</a>
+          <a href="globe.html">globe</a>
+          <a href="mailto:mwang@gatech.edu">mwang@gatech.edu</a>
+        </nav>
+
+        <div class="clear"></div>
+      </div>
+    </header>
+
+    <main class="global-main-wrap">
+    <!-- TITLE DIV-->
+    <div class="wrapper">
+      <div id="title">
+        <p class="globe-headline"> Mass Shootings in America </p>
+      </div>
+
+      <div id="currentInfo">
+        <span id="typedeaths" class="type">deaths</span>
+        <span id="typeinjuries" class="type active">injuries</span>
+      </div>
+    </div>
+
+    <!-- GLOBE -->
+    <div class="content">
+      <div id="container"><canvas id="globe"></canvas></div>
+    </div>
+
+    <!-- INFO -->
+    <div class="wrapper">
+    <div id="info">
+      <strong><a href="http://www.chromeexperiments.com/globe">Uses Google WebGL Globe</a></strong>
+    </div>
+  </div>
+
+
+  <section class="content1">
+    <div class="wrapper">
+      <div class="box">
+        <div class="left-col">
+          <p class="big"> Here's the breakdown</p>
+        </div>
+
+        <div class="right-col">
+          <p>Above is my WebGL Globe data visuzalization project for the
+            Capital One MindSumo Challenge. The dataset I picked was the Gun
+            Violence Archive's database on mass shootings since 2012. For scale,
+            the magnitudes of the largest spikes on the "deaths" and "injuries" globes are 55
+            and 321 respectively, and the spikes are grouped by geographic
+            location (rounded to the nearest whole latitude and longitude).
+            In total, there were 1276 deaths, 4502 injuries, and 222
+            distinct locations across the United States. Some
+            locations with the largest casualities are Orlando, San Bernardino,
+            and Chicago. Below, I have provided a visualization in
+            <a href="https://en.wikipedia.org/wiki/Minecraft">Minecraft</a> to
+            visualize how significant 1276 people actually is, as well as a
+            timeline of the largest mass shootings since 2012.
+
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="images">
+	  <div class="large-wrapper">
+      <p class="global-big">What does <u>1296</u> people look like?</p>
+	    <figure class="half-width-1">
+	      <img class="img-rectangle" src="static/jpg/minecraft_2.jpg"></img>
+	      <figcaption></figcaption>
+	    </figure>
+	    <figure class="half-width-2">
+	      <img class="img-rectangle" src="static/jpg/minecraft_3.jpg"></img>
+	      <figcaption></figcaption>
+	    </figure>
+	    <figure class="full-width">
+	      <img class="img-rectangle" src="static/gif/minecraft_animation.gif"></img>
+        <figcaption></br></figcaption>
+	    </figure>
+	  </div>
+	</section>
+
+  <div class="wrapper">
+    <div class="box">
+      <p class="globe-headline"> United States' History of Mass Shootings </p>
+      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+    </div>
+  </div>
+
+
+    <section class="content2">
+      <div class="wrapper">
+        <div class="box">
+          <p class="big">Key Takeaway: "What we dont know is astounding."</p>
+
+          <p> My intention for creating this data visualization
+              was not for the sake of debating the issue of gun control. I think
+              it is an important discussion to be had, especially at
+              <a href="http://www.cnn.com/2016/05/03/health/georgia-campus-carry-bill/">
+              my college.</a>, but I think an equally important issue before
+              that is the distribution of information regarding issues like this.
+              When I was gathering data for this project, I ran into a lot of
+              complications finding an exhaustive database that went back
+              multiple years. Only after using the Twitter Search API (I was
+              planning on doing geographic information about tweets that had the
+              word "shooting"), I found an tweet that explained "There is no
+              national database on mass shootings, and the CDC isn't allowed to form
+              one." That article is <a = href="http://www.vocativ.com/257325/mass-shooting-database/">here</a>.
+              The point is this: despite all the data presented, we still do not
+              know how accurately these visualizations represent the total
+              number of deaths due to mass shootings.
+              We can only make good decisions if we are better informed. </p>
+
+            </br>
+
+              <p class="big">Libraries, Citations, and Other Resources:</p>
+              <p>
+              The data for the Web GL Globe was provided by the Gun Violence
+              Archive (GVA), a "not for profit corporation formed in 2013 to
+              provide free online public access to accurate information about
+              gun-related violence in the United States. GVA will collect and
+              check for accuracy, comprehensive information about gun-related
+              violence in the U.S. and then post and disseminate it online."
+              Information and news briefs about the largest mass shootings since
+              2012 was provided by <i>The LA Times</i>. Check out that article
+              <a href="http://timelines.latimes.com/deadliest-shooting-rampages/">here</a>.
+              More information and some very moving data visualizations about
+              mass shootings can be found <a href="https://www.washingtonpost.com/graphics/national/mass-shootings-in-america/">here</a>
+              (thank you reddit).
+
+
+            </br></br>
+                    For this project, I wrote code in Python, HTML, CSS, and JS. I used Excel
+                    and Python to clean the data. Once cleaned, I used an online
+                    resource called batch geocode to get the latitude and longitude
+                    of all the cities in the dataset. I then used the WebGL Globe
+                    libarary to put the geographic data on the 3D globe. In Minecraft,
+                    I used the <a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1272348-single-player-commands-v4-9-official-download-spc">
+                    Single Player Commands Mod</a> to spawn 1296 villagers and
+                    used <a href="http://screentogif.codeplex.com/">ScreenToGif</a>
+                    for the images and animations. For the timeline, I used a slightly
+                    edited version of <a href="https://timeline.knightlab.com/">TimelineJS</a>.
+                    For the website, the CSS libraries I used were Normalize and
+                    FontAwesome, and the JS Libraries I used were Detector.JS, globe.JS,
+                    pace.JS, Three.js, and Tween.js for the WebGL Globe.
+                  </p>
+
+
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-col">
+        <h4>Michael Wang</h4>
+        <p>Georgia Tech, 2019<br/>
+          Atlanta, Georgia</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Organizations</h4>
+        <p>
+          <a href="http://chinacare.gatech.edu/">China Care GT</a><br/>
+          <a href="http://gttower.org/" target="_blank">The Tower</a><br/>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Network</h4>
+        <p>
+          <a href="https://www.linkedin.com/in/michael-wang-609491112">LinkedIn</a><br/>
+          <a href="https://github.com/mwang370" target="_blank">GitHub</a><br/>
+        </p>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:mwang@gatech.edu">mwang@gatech.edu</a><br/>
+          <a href="https://twitter.com/itsmwang" target="_blank">@itsmwang</a><br/>
+        </p>
+      </div>
+
+</div>
+
+
+    <!--TIMELINE JS STUFF-->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script type="text/javascript">
+      // The TL.Timeline constructor takes at least two arguments:
+      // the id of the Timeline container (no '#'), and
+      // the URL to your JSON data file or Google spreadsheet.
+      // the id must refer to an element "above" this code,
+      // and the element must have CSS styling to give it width and height
+      // optionally, a third argument with configuration options can be passed.
+      // See below for more about options.
+      timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1_-fGd8eiVw4L2VFk7IIBaoXzzKgoPpgBEPSbjQ16oSo/pubhtml');
+    </script>
+
+    <!-- JS STUFF-->
+    <script type="text/javascript" src="static/js/Detector.js"></script>
+    <script type="text/javascript" src="static/js/three.min.js"></script>
+    <script type="text/javascript" src="static/js/Tween.js"></script>
+    <script type="text/javascript" src="static/js/globe.js"></script>
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/typed.js"></script>
+    <script type="text/javascript" src="static/js/pace.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <script type="text/javascript">
+      if(!Detector.webgl){
+        Detector.addGetWebGLMessage();
+      } else {
+        var types = ['deaths','injuries']
+        var colors = [0x8A0707];
+        var container = document.getElementById('container');
+        var globe;
+        console.log(globe);
+        loadData('static/data/mass_shootings.json');
+      }
+
+      function clearData()
+      {
+        var myNode = document.getElementById("container");
+		    while (myNode.firstChild) {
+			  myNode.removeChild(myNode.firstChild);
+		      }
+      }
+
+      function loadData(url)
+      {
+        clearData();
+
+        var xhr;
+        xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function(e) {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            window.data = data;
+
+      			globe = new DAT.Globe(container, function(x){
+      			return new THREE.Color(0x8A0707);
+      		  });
+
+          var change = function(i) {
+            return function() {
+				console.log(i);
+                globe.resetData();
+				console.log(i);
+                globe.addData(data[i][1], {format: 'magnitude'});
+                globe.createPoints();
+                globe.animate();
+
+
+				var y = document.getElementById('type'+types[i]);
+				  if (y.getAttribute('class') === 'type active') {
+					return;
+				  }
+
+               var yy = document.getElementsByClassName('type');
+			  for(var j=0; j<yy.length; j++) {
+				yy[j].setAttribute('class','type');
+			  }
+			  y.setAttribute('class', 'type active');
+            };
+        }
+
+		globe.addData(data[0][1], {format: 'magnitude'});
+
+
+
+
+          for(var i = 0; i<types.length; i++) {
+            var y = document.getElementById('type'+types[i]);
+            y.addEventListener('click', change(i), false);
+        y.setAttribute('class','type');
+        console.log("add click " +i);
+          }
+
+          document.getElementById("typedeaths").setAttribute('class', 'type active');
+
+          globe.createPoints();
+
+          globe.animate();
+          document.body.style.backgroundImage = 'none'; // remove loading
+        }
+      }
+
+    };
+    xhr.send(null);
+      }
+    </script>
+
+  </body>
+
+</html>
